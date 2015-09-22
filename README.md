@@ -6,6 +6,17 @@ An [maven](https://maven.apache.org/) (Apache Maven) plugin for generating [Git 
 To add maven-jira-mandate functionality to your project add the following to your `pom.xml` file:
 
 ```xml
+<pluginRepositories>
+    <pluginRepository>
+        <snapshots>
+            <enabled>true</enabled>
+        </snapshots>
+        <id>libs-snapshot-local</id>
+        <name>libs-snapshot-local</name>
+        <url>http://<artifactory-host>:8081/artifactory/libs-snapshot-local</url>
+    </pluginRepository>
+</pluginRepositories>
+
 <build>
     <plugins>
         <plugin>
