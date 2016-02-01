@@ -23,6 +23,7 @@ To add maven-jira-mandate functionality to your project add the following to you
             <groupId>com.flipkart.jira</groupId>
             <artifactId>maven-jira-mandate</artifactId>
             <version>1.0.0-SNAPSHOT</version>
+            <inherited>false</inherited>
             <configuration>
                 <jira>BRO</jira>
             </configuration>
